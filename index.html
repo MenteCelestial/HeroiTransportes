@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herói Transportes - Excelência e segurança em transporte e logística.">
+    <meta name="theme-color" content="#1e3a8a"> <!-- Azul corporativo -->
+
+    <!-- Open Graph (SEO e Compartilhamento) -->
+    <meta property="og:title" content="Herói Transportes | Transporte de Qualidade">
+    <meta property="og:description" content="Prestamos um excelente serviço em transportes com segurança, pontualidade e equipe especializada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.heroitransportes.com.br">
+    <meta property="og:image" content="https://www.heroitransportes.com.br/assets/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <title>Herói Transportes | Logística Integrada</title>
+
+    <!-- Tailwind CSS via CDN para desenvolvimento rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de cores personalizadas no Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',
+                            yellow: '#fbbf24',
+                            dark: '#111827'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Botão WhatsApp Flutuante (Agora dentro do body e acessível) -->
+    <a href="https://api.whatsapp.com/send?l=pt&phone=5515996603845" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Fale conosco pelo WhatsApp"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform transform hover:scale-110">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.031 21.493l-3.149-.525-2.822 1.48.513-3.155-2.228-2.261 3.109-1.222.753-3.084 2.827 1.472 2.91-1.353-.615 3.136 2.144 2.34-3.16.512.718 3.093zM12.031 2C6.494 2 2 6.494 2 12.031c0 1.765.457 3.428 1.258 4.887l-1.349 4.04 4.148-1.32c1.423.753 3.056 1.182 4.793 1.182 5.537 0 10.031-4.494 10.031-10.031S17.568 2 12.031 2zm5.062 14.618c-.212.597-1.227 1.144-1.696 1.188-.432.04-1.025.132-3.328-.82-2.784-1.15-4.577-3.99-4.717-4.177-.14-.188-1.127-1.503-1.127-2.868s.71-2.046.953-2.3.568-.318.756-.318c.188 0 .376.012.536.012.176 0 .412-.066.64.484.237.575.782 1.905.852 2.046.07.14.117.305.023.493-.094.188-.14.305-.28.47-.14.164-.294.364-.422.482-.14.13-.294.27-.13.553.164.282.727 1.205 1.56 1.947 1.074.957 1.986 1.26 2.27 1.4.282.14.446.117.61-.07.164-.188.71-1.023.9-1.375.188-.352.376-.294.634-.2.258.094 1.63.768 1.91 1.907.28.14.47.212.54.33.07.117.07.68-.14 1.277z"/></svg>
+    </a>
+
+    <!-- Cabeçalho Principal -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <!-- Substituir src pela logo real -->
+                <div class="w-12 h-12 bg-brand-blue rounded-md flex items-center justify-center text-white font-bold">HT</div>
+                <span class="text-xl font-bold text-brand-blue tracking-tight">Herói Transportes</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-6 items-center font-medium text-sm">
+                <a href="#home" class="text-brand-blue hover:text-brand-yellow transition">Home</a>
+                <a href="#sobre" class="text-gray-600 hover:text-brand-blue transition">Empresa</a>
+                <a href="#servicos" class="text-gray-600 hover:text-brand-blue transition">Serviços</a>
+                <a href="#contato" class="text-gray-600 hover:text-brand-blue transition">Contato</a>
+            </nav>
+
+            <div class="hidden md:block text-right">
+                <p class="text-xs text-gray-500">Atendimento</p>
+                <p class="font-bold text-brand-blue">(15) 3031-3109</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Substitui o Slider quebrado) -->
+    <section id="home" class="relative bg-brand-dark text-white pt-24 pb-32 flex items-center justify-center min-h-[70vh]">
+        <!-- O ideal aqui é ter uma imagem de fundo otimizada (.webp) com overlay -->
+        <div class="absolute inset-0 bg-brand-blue/80 bg-blend-multiply z-0"></div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Logística Integrada com <br>
+                <span class="text-brand-yellow">Segurança e Pontualidade</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+                Contamos com uma equipe especializada e frota apropriada para garantir que seu produto chegue ao destino de forma adequada.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contato" class="bg-brand-yellow text-brand-dark px-8 py-3 rounded-md font-bold hover:bg-yellow-400 transition shadow-md">
+                    Solicitar Cotação
+                </a>
+                <a href="#servicos" class="border border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-brand-dark transition">
+                    Nossos Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão, Visão e Valores (Grid Moderno) -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-blue mb-4">Herói Transportes</h2>
+                <p class="text-gray-600">Eficiência e compromisso em cada etapa do transporte.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Diferencial -->
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center mb-6 text-xl font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-dark">Diferencial</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Prezamos padrões de qualidade em todos os processos do transporte, desde a retirada até a entrega da mercadoria no destino, garantindo a completa satisfação do cliente.
+                    </p>
+                </div>
+                
+                <!-- Missão -->
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center mb-6 text-xl font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-dark">Missão</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Atuar de forma transparente e responsável na prestação de serviços logísticos, mantendo o foco na qualidade, excelência e melhoria contínua.
+                    </p>
+                </div>
+
+                <!-- Visão -->
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center mb-6 text-xl font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-4 text-brand-dark">Visão</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Ser encarada como uma parceira estratégica de negócios pelos nossos clientes, destacando-se pela responsabilidade e eficácia no ecossistema logístico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Serviços (Sem o uso incorreto de <br>) -->
+    <section id="servicos" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-brand-blue mb-8">Garantia e Cuidado</h2>
+            <p class="text-gray-700 text-lg mb-12 leading-relaxed">
+                Garantir o cuidado no transporte é primordial para que o produto chegue intacto. Para isso, contamos com profissionais rigorosamente preparados e veículos dimensionados especificamente para a sua carga.
+            </p>
+            
+            <!-- Grid de Ícones -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Substituir pelos SVGs ou imagens otimizadas reais -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white shadow-sm rounded-full flex items-center justify-center mb-4">📍</div>
+                    <span class="font-medium text-gray-800">Rotas Otimizadas</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white shadow-sm rounded-full flex items-center justify-center mb-4">📦</div>
+                    <span class="font-medium text-gray-800">Entregas Seguras</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white shadow-sm rounded-full flex items-center justify-center mb-4">⚖️</div>
+                    <span class="font-medium text-gray-800">Cargas Especiais</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white shadow-sm rounded-full flex items-center justify-center mb-4">🚚</div>
+                    <span class="font-medium text-gray-800">Frota Própria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé e Formulário (Lógica Corrigida) -->
+    <footer id="contato" class="bg-brand-dark text-gray-300 py-16 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Identidade -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Herói Transportes</h3>
+                    <p class="text-sm mb-6">Eficiência no Transporte e precisão na Logística.</p>
+                    <p class="text-xs text-gray-500">
+                        &copy; <span id="year"></span> Todos os direitos reservados.
+                    </p>
+                </div>
+
+                <!-- Contatos -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Fale Conosco</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2">
+                            📞 (15) 3031-3109
+                        </li>
+                        <li class="flex items-center gap-2">
+                            📱 <a href="https://api.whatsapp.com/send?l=pt&phone=5515996603845" target="_blank" class="text-green-400 hover:underline">(15) 99660-3845</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            ✉️ contato@heroitransportes.com.br
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulário Corrigido -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Envie uma Mensagem</h4>
+                    <form action="enviarcontato.php" method="POST" class="space-y-4 text-gray-800">
+                        <!-- Adicionados os atributos 'name' obrigatórios e 'required' -->
+                        <input type="text" name="nome" id="nome" placeholder="Seu Nome" required 
+                               class="w-full px-4 py-2 rounded bg-gray-100 border-none focus:ring-2 focus:ring-brand-yellow outline-none">
+                        
+                        <input type="email" name="email" id="email" placeholder="Seu E-mail" required 
+                               class="w-full px-4 py-2 rounded bg-gray-100 border-none focus:ring-2 focus:ring-brand-yellow outline-none">
+                        
+                        <textarea name="mensagem" id="mensagem" rows="3" placeholder="Sua Mensagem..." required 
+                                  class="w-full px-4 py-2 rounded bg-gray-100 border-none focus:ring-2 focus:ring-brand-yellow outline-none resize-none"></textarea>
+                        
+                        <!-- Mudança de type="button" para type="submit" -->
+                        <button type="submit" class="bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-bold py-2 px-6 rounded transition w-full">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para atualizar o ano automaticamente -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
